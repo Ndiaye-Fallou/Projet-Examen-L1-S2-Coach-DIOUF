@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIBS EVENTS - AGENDA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+    <header class="bg-[#0a0e23] fixed top-0 left-0 right-0 z-9999 flex justify-around p-2 items-center text-white">
+        <div class="flex gap-2 w-[200px] items-center">
+            <img src="Logo IIBS noir.png"
+                    alt="Image-logo" class="rounded-full h-[40px] w-[70px]">
+            <h2>IIBS - EVENTS</h2>
+        </div>
+
+        <nav class="flex gap-5">
+            <a href="index.html">Accueil</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="bg-white p-2 rounded-xl text-blue-950 font-semibold"><a href="inscriptions.html">S'inscrire</a></button>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Section 1 -->
+        <section class="mt-20 mb-5 flex flex-col gap-3">
+        <h1 class="text-4xl text-blue-950 font-bold">Agenda des évènements</h1>
+        <p class="text-gray-900">6 évènements à venir</p>
+        <div class="flex flex-wrap items-center gap-3 mb-10">
+            <button type="button" class="text-sm font-semibold px-4 py-2 rounded-full bg-green-500 text-[#0a0e23]">Tout</button>
+            <button type="button" class="text-sm font-medium px-4 py-2 rounded-full border border-gray-300 text-gray-600 hover:border-[#0a0e23] transition-colors">Conférences</button>
+            <button type="button" class="text-sm font-medium px-4 py-2 rounded-full border border-gray-300 text-gray-600 hover:border-[#0a0e23] transition-colors">Ateliers</button>
+            <button type="button" class="text-sm font-medium px-4 py-2 rounded-full border border-gray-300 text-gray-600 hover:border-[#0a0e23] transition-colors">Compétitions</button>
+            <button type="button" class="text-sm font-medium px-4 py-2 rounded-full border border-gray-300 text-gray-600 hover:border-[#0a0e23] transition-colors">Carrières</button>
+        
+       <div class="flex gap-5 ml-70">
+          <label class="ml-auto sr-only" for="recherche">Rechercher un évènement</label>
+      <div class="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-2 text-gray-500 text-sm">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="recherche" type="text" placeholder="Recherche" class="bg-transparent focus:outline-none">
+      </div>
+
+      <button type="button" class="text-sm font-medium px-4 py-2 rounded-lg border border-gray-300 text-gray-600">
+        Trier : date
+      </button>
+       </div>
+    </div>
+     </section>
+    <!-- Section 1 -->
+
+    <!-- Section 2 -->
+     <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Carte 1 -->
+      <article class="bg-[#121a3f] rounded-2xl overflow-hidden flex flex-col">
+        <img src="Hackthon.jpg" alt="Illustration Hackathon IIBS 2026" class="w-full h-40 object-cover">
+        <div class="p-5 flex flex-col flex-1">
+          <p class="text-green-400 text-xs font-semibold mb-1">Compétition</p>
+          <h2 class="font-display font-semibold text-white text-lg mb-3">Hackatton IIBS 2026</h2>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="text-gray-400 text-sm">15-16 Juil, Salle A11</span>
+            <a href="Evènements/hackatton.html" class="inline-flex items-center gap-1 bg-white text-navy-950 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+              Détails
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 2 -->
+      <article class="bg-[#121a3f] rounded-2xl overflow-hidden flex flex-col">
+        <img src="IA.jpg" alt="Illustration Conférence l'IA et les métiers de demain" class="w-full h-40 object-cover">
+        <div class="p-5 flex flex-col flex-1">
+          <p class="text-green-400 text-xs font-semibold mb-1">Conférence</p>
+          <h2 class="font-display font-semibold text-white text-lg mb-3">L'IA et les métiers de demain</h2>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="text-gray-400 text-sm">22 Jan, Amphi A</span>
+            <a href="Evènements/conference.html" class="inline-flex items-center gap-1 bg-white text-navy-950 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+              Détails
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 3 -->
+      <article class="bg-[#121a3f] rounded-2xl overflow-hidden flex flex-col">
+        <img src="github.jpg" alt="Illustration Atelier Git et GitHub pour débutants" class="w-full h-40 object-cover">
+        <div class="p-5 flex flex-col flex-1">
+          <p class="text-green-400 text-xs font-semibold mb-1">Ateliers</p>
+          <h2 class="font-display font-semibold text-white text-lg mb-3">Git &amp; Github pour débutants</h2>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="text-gray-400 text-sm">05 Fév, Salle 12</span>
+            <a href="Evènements/atelier.html" class="inline-flex items-center gap-1 bg-white text-navy-950 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+              Détails
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 4 -->
+      <article class="bg-[#121a3f] rounded-2xl overflow-hidden flex flex-col">
+        <img src="porte ouverte.jpg" alt="Illustration Journée portes ouvertes IIBS" class="w-full h-40 object-cover">
+        <div class="p-5 flex flex-col flex-1">
+          <p class="text-green-400 text-xs font-semibold mb-1">porte ouverte</p>
+          <h2 class="font-display font-semibold text-white text-lg mb-3">Journée portes ouvertes IIBS</h2>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="text-gray-400 text-sm">26 Juil, Hall principal</span>
+            <a href="Evènements/porteouverte.html" class="inline-flex items-center gap-1 bg-white text-navy-950 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+              Détails
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 5 -->
+      <article class="bg-[#121a3f] rounded-2xl overflow-hidden flex flex-col">
+        <img src="enterprenuer.jpg" alt="Illustration Forum entreprise et stage" class="w-full h-40 object-cover">
+        <div class="p-5 flex flex-col flex-1">
+          <p class="text-green-400 text-xs font-semibold mb-1">Carrière</p>
+          <h2 class="font-display font-semibold text-white text-lg mb-3">Forum entreprise et stage</h2>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="text-gray-400 text-sm">10 Juil, Grand Théâtre</span>
+            <a href="Evènements/carriere.html" class="inline-flex items-center gap-1 bg-white text-navy-950 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+              Détails
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 6 -->
+      <article class="bg-[#121a3f] rounded-2xl overflow-hidden flex flex-col">
+        <img src="demo day.jpg" alt="Illustration Demo Day des projets étudiants" class="w-full h-40 object-cover">
+        <div class="p-5 flex flex-col flex-1">
+          <p class="text-green-400 text-xs font-semibold mb-1">Vie de campus</p>
+          <h2 class="font-display font-semibold text-white text-lg mb-3">Demo Day des projets étudiants</h2>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="text-gray-400 text-sm">30 Juil, Salle 01</span>
+            <a href="Evènements/viecampus.html" class="inline-flex items-center gap-1 bg-white text-navy-950 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+              Détails
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+     </section>
+    <!-- Section 2 -->
+    </main>
+     <footer class="bg-[#0a0e23] text-white">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 p-20">
+                <article class="grid grid-cols-1 gap-3">
+                    <h1 class="font-extrabold text-2xl">IIBS - EVENTS</h1>
+                    <p>Apprendre, échanger, créer : IIBS Events est le <br> rendez-vous de toutes les initiatives qui
+                        font <br> vivre le campus.</p>
+                    <div class="flex gap-3">
+                        <a href="" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#121a3f] hover:bg-[#1b2554] transition-colors">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#121a3f] hover:bg-[#1b2554] transition-colors">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#121a3f] hover:bg-[#1b2554] transition-colors">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <h1 class="text-orange-400 font-bold">Liens utiles</h1>
+                    <div class="flex flex-col gap-2 pt-3">
+                        <a href="index.html" class="hover:text-white transition-colors">Accueil</a>
+                        <a href="agenda.html" class="hover:text-white transition-colors">Agenda</a>
+                        <a href="actualites.html" class="hover:text-white transition-colors">Actualités</a>
+                        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                    </div>
+                </article>
+                <article class="flex flex-col gap-3">
+                    <h1 class="text-orange-400 font-bold">Contact</h1>
+                    <span>📍 Dakar, Sacré cœur 3</span>
+                    <span>📞 +221 77 777 77 77</span>
+                    <span>✉️ iibs@events.sn</span>
+                </article>
+            </div>
+            <div class="text-center border-t border-[#1b2554] py-6">Copyright IIBS - 2026 - Tous droits réservés</div>
+        </footer>
+    
+</body>
+</html>

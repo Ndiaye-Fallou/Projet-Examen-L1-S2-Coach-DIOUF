@@ -13,20 +13,39 @@
 </head>
 
 <body>
-    <header class="bg-[#0a0e23] fixed top-0 left-0 right-0 z-9999 flex justify-around p-2 items-center text-white">
-        <div class="flex gap-2 w-[200px] items-center">
+    <header class="bg-[#0a0e23] fixed top-0 left-0 right-0 z-9999 text-white lg:px-20">
+        <input type="checkbox" id="menu-toggle" class="peer hidden" aria-hidden="true">
+        <div class="flex justify-between py-4 px-6 items-center">
+            <div class="flex gap-2 w-[200px] items-center">
             <img src="/Logo IIBS noir.png" alt="Image-logo" class="rounded-full h-[40px] w-[70px]">
             <h2>IIBS - EVENTS</h2>
         </div>
 
-        <nav class="flex gap-5">
+        <nav class="hidden md:flex items-center gap-8 font-medium">
             <a href="/index.html">Accueil</a>
             <a href="/agenda.html">Agenda</a>
             <a href="/actualites.html">Actualités</a>
             <a href="/contact.html">Contact</a>
         </nav>
-        <button class="bg-white p-2 rounded-xl text-blue-950 font-semibold"><a
+        <button class="bg-white p-2 rounded-xl text-blue-950 font-semibold hidden md:inline-flex"><a
                 href="inscriptions.html">S'inscrire</a></button>
+        </div>
+    <label for="menu-toggle" class="md:hidden peer-checked:hidden absolute top-4 right-6 cursor-pointer text-2xl" aria-label="Ouvrir le menu">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <label for="menu-toggle" class="md:hidden hidden peer-checked:block absolute top-4 right-6 cursor-pointer text-2xl" aria-label="Fermer le menu">
+        <i class="fa-solid fa-x"></i>
+    </label>
+
+    <nav aria-label="Navigation mobile" class="md:hidden hidden peer-checked:flex flex-col px-6 pb-6 border-t border-navy-800">
+      <a href="/index.html" class="py-3 border-b border-navy-800 font-medium">Accueil</a>
+      <a href="/agenda.html" class="py-3 border-b border-navy-800 font-medium">Agenda</a>
+      <a href="/actualites.html" class="py-3 border-b border-navy-800 font-medium">Actualités</a>
+      <a href="/contact.html" class="py-3 border-b border-navy-800 font-medium">Contact</a>
+      <a href="/inscriptions.html" class="mt-4 inline-flex items-center justify-center gap-2 bg-white text-blue-950 font-semibold text-sm px-5 py-3 rounded-lg">
+        S'inscrire
+      </a>
+    </nav>
     </header>
     <!-- Section 1 -->
     <section class="mt-15 p-3">
@@ -35,9 +54,9 @@
                 Retour
             </button></a>
     </section>
-    <img src="/github.jpg" alt="" class="w-full h-40 object-cover ">
+    <img src="/github.jpg" alt="" class="w-full h-40 object-cover hidden md:inline-flex">
     <!-- Section 1 -->
-    <main class="px-40 mt-10 flex flex-col gap-10">
+    <main class="lg:px-40 px-3 mt-10 flex flex-col gap-10">
         <!-- Section 2 -->
         <section>
             <span class="text-blue-700">Atelier</span>
@@ -67,7 +86,7 @@
         </section>
         <section class="flex flex-col gap-5 bg-gray-300 rounded-xl p-5 mb-20">
             <h1 class="font-bold text-xl">Intervenants</h1>
-            <div class="text-white grid grid-cols-3 gap-5">
+            <div class="text-white grid grid-cols-1 lg:grid-cols-3 gap-5">
                 <div class="bg-[#121a3f] flex gap-3 rounded-xl p-3">
                     <img src="/diouf.jpg" alt="Avatar-1" class="h-15 w-15 rounded-full">
                     <div class="felx flex-col gap-2">
@@ -80,7 +99,7 @@
         <!-- Section 3 -->
     </main>
     <footer class="bg-[#0a0e23] text-white">
-        <div class="grid grid-cols-3 gap-10 p-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 p-20">
             <article class="grid grid-cols-1 gap-3">
                 <h1 class="font-extrabold text-2xl">IIBS - EVENTS</h1>
                 <p>Apprendre, échanger, créer : IIBS Events est le <br> rendez-vous de toutes les initiatives qui

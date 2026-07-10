@@ -16,20 +16,39 @@
 </head>
 
 <body class="overflow-x-hidden font-sans">
-    <header class="bg-[#0a0e23] fixed top-0 left-0 right-0 z-9999 flex justify-around p-2 items-center text-white">
-        <div class="flex gap-2 w-[200px] items-center">
+    <header class="bg-[#0a0e23] fixed top-0 left-0 right-0 z-9999 text-white lg:px-20">
+        <input type="checkbox" id="menu-toggle" class="peer hidden" aria-hidden="true">
+        <div class="flex justify-between py-4 px-6 items-center">
+            <div class="flex gap-2 w-[200px] items-center">
             <img src="Logo IIBS noir.png" alt="Image-logo" class="rounded-full h-[40px] w-[70px]">
             <h2>IIBS - EVENTS</h2>
         </div>
 
-        <nav class="flex gap-5">
+        <nav class="hidden md:flex items-center gap-8 font-medium">
             <a href="index.html">Accueil</a>
             <a href="agenda.html">Agenda</a>
             <a href="actualites.html">Actualités</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <button class="bg-white p-2 rounded-xl text-blue-950 font-semibold"><a
+        <button class="bg-white p-2 rounded-xl text-blue-950 font-semibold hidden md:inline-flex"><a
                 href="inscriptions.html">S'inscrire</a></button>
+        </div>
+    <label for="menu-toggle" class="md:hidden peer-checked:hidden absolute top-4 right-6 cursor-pointer text-2xl" aria-label="Ouvrir le menu">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <label for="menu-toggle" class="md:hidden hidden peer-checked:block absolute top-4 right-6 cursor-pointer text-2xl" aria-label="Fermer le menu">
+        <i class="fa-solid fa-x"></i>
+    </label>
+
+    <nav aria-label="Navigation mobile" class="md:hidden hidden peer-checked:flex flex-col px-6 pb-6 border-t border-navy-800">
+      <a href="index.html" class="py-3 border-b border-navy-800 font-medium">Accueil</a>
+      <a href="agenda.html" class="py-3 border-b border-navy-800 font-medium">Agenda</a>
+      <a href="actualites.html" class="py-3 border-b border-navy-800 font-medium">Actualités</a>
+      <a href="contact.html" class="py-3 border-b border-navy-800 font-medium">Contact</a>
+      <a href="inscriptions.html" class="mt-4 inline-flex items-center justify-center gap-2 bg-white text-blue-950 font-semibold text-sm px-5 py-3 rounded-lg">
+        S'inscrire
+      </a>
+    </nav>
     </header>
     <main class="">
         <!-- Section 1 -->
@@ -41,10 +60,10 @@
             <p class="text-white">Conférences, ateliers, compétitions et rencontres professionnelles : <br> retrouvez ici
                 tous les temps forts de la vie du campus IIBS.</p>
             <div class="lg:flex gap-3">
-                <button class="bg-white p-2 rounded-xl text-blue-950 font-semibold"><a href="agenda.html">Voir les
+                <button class="bg-white p-2 rounded-xl text-blue-950 font-semibold hidden md:inline-flex"><a href="agenda.html">Voir les
                         évènements</a></button>
                 <button
-                    class="border border-white p-2 rounded-xl text-white font-semibold hover:bg-gray-700 transition-colors"><a
+                    class="border border-white p-2 rounded-xl text-white font-semibold hover:bg-gray-700 transition-colors hidden md:inline-flex"><a
                         href="inscriptions.html">S'inscrire</a></button>
             </div>
         </section>
@@ -126,22 +145,22 @@
                 <p class="text-gray-400">Découvrez le dynamisme de la <br> communauté IIBS à travers les résultats de
                     nos derniers événements, <br> ateliers et compétitions.</p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-5">
-                    <div class="bg-[#121a3f] rounded-2xl w-[230px] p-2">
+                    <div class="bg-[#121a3f] rounded-2xl lg:w-[230px] p-2">
                         <span class="font-extrabold text-green-500 text-2xl">+15</span>
                         <h1 class="font-bold">Evènements cette année</h1>
                         <p class="text-gray-400">Hackathons, JPO, forums et conférences thématiques.</p>
                     </div>
-                    <div class="bg-[#121a3f] rounded-2xl w-[230px] p-2">
+                    <div class="bg-[#121a3f] rounded-2xl lg:w-[230px] p-2">
                         <span class="font-extrabold text-green-500 text-2xl">+15</span>
                         <h1 class="font-bold">Evènements cette année</h1>
                         <p class="text-gray-400">Hackathons, JPO, forums et conférences thématiques.</p>
                     </div>
-                    <div class="bg-[#121a3f] rounded-2xl w-[230px] p-2">
+                    <div class="bg-[#121a3f] rounded-2xl lg:w-[230px] p-2">
                         <span class="font-extrabold text-green-500 text-2xl">+15</span>
                         <h1 class="font-bold">Evènements cette année</h1>
                         <p class="text-gray-400">Hackathons, JPO, forums et conférences thématiques.</p>
                     </div>
-                    <div class="bg-[#121a3f] rounded-2xl w-[230px] p-2">
+                    <div class="bg-[#121a3f] rounded-2xl lg:w-[230px] p-2">
                         <span class="font-extrabold text-green-500 text-2xl">+15</span>
                         <h1 class="font-bold">Evènements cette année</h1>
                         <p class="text-gray-400">Hackathons, JPO, forums et conférences thématiques.</p>
